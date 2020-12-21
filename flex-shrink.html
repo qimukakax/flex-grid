@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 600px;
+        height: 300px;
+        display: flex;
+        border: 2px dotted #333333;
+        margin: 0 auto;
+    }
+    .container > div {
+        text-align: center;
+    }
+    .one {
+        width: 300px;
+        flex-shrink: 1;
+        background-color: #ff4466;
+    }
+    .two {
+        width: 300px;
+        flex-shrink: 2;
+        background-color: #42b989;
+    }
+    .three {
+        width: 300px;
+        flex-shrink: 3;
+        background: #61daff;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="one">A<br>width:300px<br>flex-shrink:1</div>
+        <div class="two">B<br>width:300px<br>flex-shrink:2</div>
+        <div class="three">C<br>width:300px<br>flex-shrink:3</div>
+    </div>
+</body>
+</html>
