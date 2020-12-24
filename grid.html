@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        grid-template-rows: repeat(3,300px);
+        font-size: 28px;
+        width: 900px;
+        height: 900px;
+        border: 2px dotted #333333;
+        margin: 0 auto;
+    }
+    .container > div {
+       text-align: center;
+       line-height: 300px;
+    }
+    .item1{
+        background-color: #ef342a;
+    }
+    .item2 {
+        background-color: #4a4a22;
+    }
+    .item3 {
+        background-color: #a2d5dd;
+    }
+    .item4 {
+        background-color: #c077c2;
+    }
+    .item5 {
+        background-color: #d0e4a9;
+    }
+    .item6 {
+        background-color: #ff8899;
+    }
+    .item7 {
+        background-color: #00ffff;
+    }
+    .item8 {
+        background-color: #e0e0ee;
+    }
+    .item9 {
+        background-color: #f8d29d;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+        <div class="item8">8</div>
+        <div class="item9">9</div>
+    </div>
+</body>
+</html>
