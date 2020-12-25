@@ -14,26 +14,7 @@
         display: grid;
         grid-template-columns: repeat(3,150px);
         grid-template-rows: repeat(3,150px);
-        font-size: 28px;
-        width: 450px;
-        height: 450px;
-        border: 2px dotted #333333;
-        margin: 100px auto;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3,33.3%);
-        grid-template-rows: repeat(3,33.3%);
-        font-size: 28px;
-        width: 450px;
-        height: 450px;
-        border: 2px dotted #333333;
-        margin: 100px auto;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-auto-flow: row;
         font-size: 28px;
         width: 450px;
         height: 450px;
@@ -48,6 +29,7 @@
         background-color: #ef342a;
     }
     .item2 {
+        grid-column-start: span 4;
         background-color: #4a4a22;
     }
     .item3 {
@@ -56,21 +38,6 @@
     .item4 {
         background-color: #c077c2;
     }
-    .item5 {
-        background-color: #d0e4a9;
-    }
-    .item6 {
-        background-color: #ff8899;
-    }
-    .item7 {
-        background-color: #00ffff;
-    }
-    .item8 {
-        background-color: #e0e0ee;
-    }
-    .item9 {
-        background-color: #f8d29d;
-    }
 </style>
 <body>
     <div class="container">
@@ -78,11 +45,6 @@
         <div class="item2">2</div>
         <div class="item3">3</div>
         <div class="item4">4</div>
-        <div class="item5">5</div>
-        <div class="item6">6</div>
-        <div class="item7">7</div>
-        <div class="item8">8</div>
-        <div class="item9">9</div>
     </div>
 </body>
 </html>
